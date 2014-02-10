@@ -3,11 +3,11 @@
   <head>
     <title>Ribbit - A Treehouse Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/normalize.css" rel="stylesheet" media="screen">
-    <link href="css/foundation.min.css" rel="stylesheet" media="screen">
-    <link href="css/foundation-icons.css" rel="stylesheet" media="screen">
-    <link href="css/my-styles.css" rel="stylesheet" media="screen">
-    <script src="js/modernizr.js"></script>
+    <link href="{{ app.request.getbaseurl }}/assets/css/normalize.css" rel="stylesheet" media="screen">
+    <link href="{{ app.request.getbaseurl }}/assets/css/foundation.min.css" rel="stylesheet" media="screen">
+    <link href="{{ app.request.getbaseurl }}/assets/css/foundation-icons.css" rel="stylesheet" media="screen">
+    <link href="{{ app.request.getbaseurl }}/assets/css/my-styles.css" rel="stylesheet" media="screen">
+    <script src="{{ app.request.getbaseurl }}/assets/js/modernizr.js"></script>
   </head>
   <body>
 
@@ -41,9 +41,29 @@
       </nav>
     </div><!-- End Top Bar -->
 
-    <!-- Interchange Content -->
-    <div data-interchange="[header_sm.html, (small)], [header_md.html, (medium)], [header_lg.html, (large)]">
-    </div><!-- End Interchange Content -->
+    <!-- Content Slider -->
+    <div class="row">
+      <div class="medium-12 column" data-orbit> 
+        <div>
+          <h1>Build a self-destructing message app</h1>
+          <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today.</p>
+          <p class="button-group radius">
+            <a class="medium button success" href="#">Download the app</a>
+            <a class="medium button hide-for-small" data-reveal-id="formModal">Text me the link</a>
+          </p> 
+        </div>
+        <div>
+          <h1>Learn how to build it for iOS</h1>
+          <p class="lead">We'll teach you how to build it from scratch!</p>
+          <p><a class="medium button radius" href="#">Get started today!</a>   
+        </div>
+        <div>
+          <h1>Learn how to build it for Android</h1>
+          <p class="lead">We'll teach you how to build it from scratch!</p>
+          <p><a class="medium button radius" href="#">Get started today!</a></p> 
+        </div>
+      </div>
+    </div><!-- End Content Slider -->
 
     <!-- Feature Content -->
     <div class="row">
@@ -72,7 +92,7 @@
         <p>We will build on the concepts learned in previous iOS projects to create an app that will allow users to send photo or video messages to other users that will be deleted once viewed.</p>
         <div class="row">
           <div class="medium-6 column">
-            <img class="th radius" data-reveal-id="vidModal" src="img/thumb.jpg">
+            <img class="th radius" data-reveal-id="vidModal" src="{{ app.request.getbaseurl }}/assets/img/thumb.jpg">
           </div>
           <div class="medium-6 column">
             <p><em>Get access to these courses for only $24 a month!</em></p>
@@ -103,9 +123,25 @@
       </div>
       <a class="close-reveal-modal">&#215;</a>
     </div><!-- End Video Modal -->
+
+    <!-- Form Modal -->
+    <div id="formModal" class="reveal-modal small" data-reveal>
+      <h3>We'll Text You the Link!</h3>
+      <form class="custom">
+        <fieldset>
+          <input type="tel" placeholder="Mobile Phone">
+          <select>
+            <option>iOS</option>
+            <option>Android</option>
+          </select>             
+          <button type="submit" class="small button">Text me!</button>
+        </fieldset>
+      </form>
+      <a href="#" class="close-reveal-modal">&#215;</a>
+    </div><!-- End Form Modal -->
     
-    <script src="js/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="{{ app.request.getbaseurl }}/assets/js/jquery.js"></script>
+    <script src="{{ app.request.getbaseurl }}/assets/js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script> 
