@@ -484,5 +484,250 @@
         "keywords": [
             "microframework"
         ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "v1.15.0",
+        "version_normalized": "1.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Twig.git",
+            "reference": "85e4ff98000157ff753d934b9f13659a953f5666"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fabpot/Twig/zipball/85e4ff98000157ff753d934b9f13659a953f5666",
+            "reference": "85e4ff98000157ff753d934b9f13659a953f5666",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2013-12-06 07:47:10",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.15-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "symfony/security-core",
+        "version": "v2.4.1",
+        "version_normalized": "2.4.1.0",
+        "target-dir": "Symfony/Component/Security/Core",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/security-core.git",
+            "reference": "c0396b13041d8fcf187174d4740b5fabe2624b37"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/security-core/zipball/c0396b13041d8fcf187174d4740b5fabe2624b37",
+            "reference": "c0396b13041d8fcf187174d4740b5fabe2624b37",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "ircmaxell/password-compat": "1.0.*",
+            "psr/log": "~1.0",
+            "symfony/event-dispatcher": "~2.1",
+            "symfony/expression-language": "~2.4",
+            "symfony/http-foundation": "~2.4",
+            "symfony/validator": "~2.2"
+        },
+        "suggest": {
+            "ircmaxell/password-compat": "For using the BCrypt password encoder in PHP <5.5",
+            "symfony/event-dispatcher": "",
+            "symfony/expression-language": "For using the expression voter",
+            "symfony/http-foundation": "",
+            "symfony/validator": "For using the user password constraint"
+        },
+        "time": "2014-01-01 08:14:50",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Security\\Core\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Security Component - Core Library",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/security-csrf",
+        "version": "v2.4.1",
+        "version_normalized": "2.4.1.0",
+        "target-dir": "Symfony/Component/Security/Csrf",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/security-csrf.git",
+            "reference": "67c366a65a5bbcbcb2db7d4d4e45a16b85f24797"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/security-csrf/zipball/67c366a65a5bbcbcb2db7d4d4e45a16b85f24797",
+            "reference": "67c366a65a5bbcbcb2db7d4d4e45a16b85f24797",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "symfony/security-core": "~2.4"
+        },
+        "require-dev": {
+            "symfony/http-foundation": "~2.1"
+        },
+        "suggest": {
+            "symfony/http-foundation": "For using the class SessionTokenStorage."
+        },
+        "time": "2013-11-21 06:37:18",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Security\\Csrf\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Security Component - CSRF Library",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "symfony/twig-bridge",
+        "version": "v2.4.1",
+        "version_normalized": "2.4.1.0",
+        "target-dir": "Symfony/Bridge/Twig",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/TwigBridge.git",
+            "reference": "4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/TwigBridge/zipball/4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87",
+            "reference": "4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "symfony/security-csrf": "~2.4",
+            "twig/twig": "~1.11"
+        },
+        "require-dev": {
+            "symfony/form": "~2.2",
+            "symfony/http-kernel": "~2.2",
+            "symfony/routing": "~2.2",
+            "symfony/security": "~2.4",
+            "symfony/stopwatch": "~2.2",
+            "symfony/templating": "~2.1",
+            "symfony/translation": "~2.2",
+            "symfony/yaml": "~2.0"
+        },
+        "suggest": {
+            "symfony/form": "For using the FormExtension",
+            "symfony/http-kernel": "For using the HttpKernelExtension",
+            "symfony/routing": "For using the RoutingExtension",
+            "symfony/security": "For using the SecurityExtension",
+            "symfony/stopwatch": "For using the StopwatchExtension",
+            "symfony/templating": "For using the TwigEngine",
+            "symfony/translation": "For using the TranslationExtension",
+            "symfony/yaml": "For using the YamlExtension"
+        },
+        "time": "2013-12-31 13:43:26",
+        "type": "symfony-bridge",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Bridge\\Twig\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Twig Bridge",
+        "homepage": "http://symfony.com"
     }
 ]
