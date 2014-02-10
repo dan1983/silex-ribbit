@@ -1,1 +1,5 @@
-Hello Again.
+{% if name is defined %}
+    Hello, {{ name }}.
+{% else %}
+    Howdy Folks.
+{% endif %}

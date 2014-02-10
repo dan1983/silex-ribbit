@@ -25,6 +25,10 @@ $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 //routing
 $app->get('/', function() use ($app) {
     return $app->render("index.php.twig");
+});
+
+$app->get('/howdy/{name}', function($name) use ($app) {
+    return $app->render("index.php.twig", array('name' => $app->escape($name)) );
 }); 
 
 // make it so.
